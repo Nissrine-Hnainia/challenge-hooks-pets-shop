@@ -9,4 +9,5 @@ const CatsList = ({cats, searchName, rate}) => {
     )
 }
 
+
 export default CatsList

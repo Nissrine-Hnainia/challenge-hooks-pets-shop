@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Container, Form, Button} from "react-bootstrap"
+import {Navbar, Container, Form} from "react-bootstrap"
 import StarRatings from "react-star-ratings"
 
 const Search = ({handleSearchName, handleRate}) => {
@@ -21,11 +21,9 @@ const Search = ({handleSearchName, handleRate}) => {
 
             <Form className="form">
                 <Form.Group  >
-                    <Form.Control type="text" placeholder="Search for your cat" id="input" />
+                    <Form.Control type="text" placeholder="Search for your cat" id="input" onChange={(e) => handleSearchName(e)} />
                 </Form.Group>
-                <Button onClick={handleSearchName} style={{backgroundColor:"#D7BDCA", border:"#D7BDCA"}}>
-                <i class="fa fa-search"></i>
-                </Button>
+                
             </Form>
         </Navbar>
     )
